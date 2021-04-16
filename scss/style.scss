@@ -1,5 +1,10 @@
-@import "global/global-base.scss";
-@import "components/components-base.scss";
 body {
   margin: 0;
+  
 }
+* {
+  margin: 0;
+}
+
+@import "global/global-base.scss";
+@import "components/components-base.scss";

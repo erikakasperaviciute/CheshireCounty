@@ -1,0 +1,124 @@
+.hero {
+    position: relative;
+    height: 100%;
+  
+    &:after,
+    &-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  
+    &:after {
+      content: "";
+      background-color: $black-bg;
+      opacity: 0.63;
+    }
+  
+    &-image {
+      object-fit: cover;
+    }
+  
+    .hero-content {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      padding-top: 65px;
+      padding-bottom: 139px;
+      color: #fff;
+      z-index: 1;
+    }
+    .first-column{
+        margin-right: 91px; //geriau būtų 87px
+      h1 {
+        margin: 0;
+        padding-top: 24px;
+        padding-bottom: 24px;
+      }
+      h6 {
+        padding-top: 24px;
+        padding-bottom: 43px;
+        line-height: 23px;
+      }
+      .download-btn {
+        border: solid 2px #FFFFFF;
+        background: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        padding: 12px 22px;
+      }
+    }
+  }
+
+.form-wrapper {
+    max-width: 260px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px #000000;
+    margin-top: 75px;
+    
+
+    h3, h6 {
+        color: $black-bg;
+    }
+    h3 {
+        background-color: $white-form-header;
+        border-radius: 5px 5px 0 0;
+        padding: 17px 50px;
+        margin-bottom: 30px;
+       
+    }
+    h6 {
+        margin-bottom: 18px;
+        
+    }
+
+    span {
+        text-transform: uppercase;
+        color: $icon-bg-orange;
+    }
+    label {
+        color: #000000;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 9px;
+        text-transform: uppercase;  
+    }
+    .get-started-btn {
+        width: 100%;
+        border: none;
+        border-radius: 0 0 5px 5px;
+        background-color: $green-neon;
+        padding: 18px 117px;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        margin: 0;
+        margin-top: 42px;
+    }
+    input[type=text], input[type=tel] {
+        border: none;
+        border-bottom: solid 1px $border-color;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    ::placeholder{
+        color: $border-color;
+        padding-left: 5px;
+        padding-bottom: 5px;
+    }
+
+}

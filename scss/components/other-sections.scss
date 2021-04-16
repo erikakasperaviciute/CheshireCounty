@@ -1,0 +1,31 @@
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+main {
+    margin-top: 72px;
+    position: sticky;
+}
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    
+
+    img {
+        margin-left: 105px;
+    }
+}
+.social-media {
+    padding: 19px 0;
+    .container {
+        display: flex;
+
+        .social-media-content {
+            margin-right: 30px;
+        }
+    }
+
+}
