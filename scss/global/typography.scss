@@ -7,13 +7,23 @@ h1, h2 {
     line-height: 42px;
 }
 h3 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 43px;
+}
+h4 {
     font-size: 20px;
     font-weight: 600;
     
 }
-h6 {
+h5 {
     font-size: 16px;
     font-weight: 600;
+}
+h6 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
 }
 ::placeholder {
     font-size: 12px;
@@ -22,4 +32,5 @@ h6 {
 p {
     font-size: 14px;
     font-weight: 400px;
+    line-height: 20px;
 }

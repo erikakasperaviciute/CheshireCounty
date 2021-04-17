@@ -25,6 +25,15 @@ main {
 
         .social-media-content {
             margin-right: 30px;
+            h4 {
+                margin-bottom: 5px;
+                color: #333333;
+            }
+            p {
+                color: $social-paragraph;
+                line-height: 20px;
+            }
+
         }
     }
 
