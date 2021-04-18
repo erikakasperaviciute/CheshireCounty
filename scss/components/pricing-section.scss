@@ -1,0 +1,87 @@
+.pricing-section {
+    background-color: $blueish;
+    text-align: center;
+    .container {
+        padding-top: 97px;
+        padding-bottom: 107px;
+        
+    }
+    h2 {
+        color: #fff;
+        text-transform: uppercase;
+    }
+    svg {
+        margin-top: 21px;
+        margin-bottom: 27px;
+    }
+    p {
+        color: #fff;
+    }
+}
+
+.pricing-cards-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 83px;
+    h4, .price, .payment {
+        background-color: #333333;
+    }
+    h4 {
+        color: #fff;
+        font-weight: 400;
+        width: 343px;
+        padding: 14px 0;
+        border-radius: 5px 5px 0 0;
+    }
+    .price {
+        font-size: 94px;
+        padding-top: 37px;
+        padding-bottom: 37px;
+        span {
+            font-size: 36px;
+        }
+    }
+    .payment {
+        padding-top: 5px;
+        padding-bottom: 17px;
+        span {
+            opacity: 0.5;
+        }
+    }
+}
+
+.plan-card-center {
+    margin-left: 40px;
+    margin-right: 40px;
+    .green-line {
+        background-color: $green-neon;
+        padding: 11px 0;
+        p {
+            text-transform: uppercase;
+        }
+    }
+}
+
+.plan-card {
+    .green-line {
+        background-color: $green-neon;
+        height: 6px;
+    }
+}
+.pricing-cards-section{
+ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    border-radius: 0px 0px 5px 5px;
+    li {
+        color: $social-paragraph;
+        text-transform: uppercase;
+        line-height: 40px;
+    }
+}
+}
