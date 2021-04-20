@@ -31,7 +31,7 @@
       z-index: 1;
     }
     .first-column{
-        margin-right: 91px; //geriau būtų 87px
+        margin-right: 87px; 
       h1 {
         margin: 0;
         padding-top: 24px;
@@ -50,6 +50,12 @@
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         padding: 12px 22px;
+        cursor: pointer;
+        &:hover {
+          background-color: $icon-bg-orange;
+       
+
+        }
       }
     }
   }
@@ -60,65 +66,132 @@
     margin: 0 auto;
     box-sizing: border-box;
 }
-
-form {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 5px 20px #000000;
-    margin-top: 75px;
-    
-
-    h4, h5 {
-        color: $black-bg;
-    }
-    h4 {
-        background-color: $white-form-header;
-        border-radius: 5px 5px 0 0;
-        padding: 17px 50px;
-        margin-bottom: 30px;
-       
-    }
-    h5 {
-        margin-bottom: 18px;
-        
-    }
-
-    span {
-        text-transform: uppercase;
-        color: $icon-bg-orange;
-    }
-    label {
-        color: #000000;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        font-size: 9px;
-        text-transform: uppercase;  
-    }
-    .get-started-btn {
-        width: 100%;
-        border: none;
-        border-radius: 0 0 5px 5px;
-        background-color: $green-neon;
-        padding: 18px 117px;
-        color: #fff;
-        text-transform: uppercase;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        font-size: 18px;
-        margin: 0;
-        margin-top: 42px;
-    }
-    input[type=text], input[type=tel] {
-        border: none;
-        border-bottom: solid 1px $border-color;
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    
-    ::placeholder{
-        color: $border-color;
-        padding-left: 5px;
-        padding-bottom: 5px;
-    }
-
+.second-column {
+  padding-top: 10px;
 }
+.radio-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+    form {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 5px 20px #000000;
+      
+      
+
+      h4, h5 {
+          color: $black-bg;
+      }
+      h4 {
+          background-color: $white-form-header;
+          border-radius: 5px 5px 0 0;
+          padding: 17px 50px;
+          margin-bottom: 30px;
+        
+      }
+      h5 {
+          margin-bottom: 18px;
+          
+      }
+
+      span {
+          text-transform: uppercase;
+          color: $icon-bg-orange;
+      }
+      label {
+          color: #000000;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 600;
+          font-size: 9px;
+          text-transform: uppercase;  
+
+      }
+      .get-started-btn {
+          width: 100%;
+          border: none;
+          border-radius: 0 0 5px 5px;
+          background-color: $green-neon;
+          padding: 18px 117px;
+          color: #fff;
+          text-transform: uppercase;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 600;
+          font-size: 18px;
+          margin: 0;
+          margin-top: 42px;
+          cursor: pointer;
+      }
+      input[type=text], input[type=tel] {
+          border: none;
+          border-bottom: solid 1px $border-color;
+          width: 100%;
+          margin-bottom: 30px;
+          outline: none;
+
+      }
+      
+      ::placeholder{
+          color: $border-color;
+          padding-left: 5px;
+          padding-bottom: 5px;
+      }
+
+  } 
+ .custom-radio {
+   label {
+     display: inline-flex;
+     justify-content: flex-start;
+     cursor: pointer;
+     margin-right: 17px;
+
+
+
+     .radio {
+       position: relative;
+       width: 13px;
+       height: 13px;
+       border-radius: 50%;
+       border: 1px solid $green-neon;
+       opacity: 0.5;
+       transition: 0.4s ease-in-out;
+       margin-right: 5px;
+
+       &:after {
+         content: "";
+         width: 5px;
+         height: 5px;
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         margin: auto;
+         background-color: $green-neon;
+         border-radius: 50%;
+         transform-origin: center center;
+         transform: scale(0);
+         transition: 0.4s ease-in-out;
+       }
+     }
+     span {
+      color: #000000;
+      opacity: 0.5;
+
+     }
+   }
+   input {
+     display: none;
+     &:checked + label {
+       .radio, span {
+         opacity: 1;
+
+         &:after {
+           transform: scale(1);
+         }
+       }
+     }
+   }
+ }
+

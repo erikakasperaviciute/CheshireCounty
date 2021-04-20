@@ -56,10 +56,22 @@
                         <input type="text" name="lname" placeholder="Last name" required>
                         <input type="tel" name="telephone" placeholder="Phone number" required>
                         <h5>Type of subscription</h5>
-                        <input type="radio" name="monthly" value="monthly">
-                        <label for="monthly">Monthly</label>
-                        <input type="radio" name="yearly" value="yearly">
-                        <label for="yearly">Yearly</label><br>
+                        <div class="radio-buttons">
+                        <div class="custom-radio">
+                        <input type="radio" name="subscription" id="monthly" checked>
+                        <label for="monthly">
+                            <div class="radio"></div>
+                            <span>Monthly</span>
+                        </label>
+                        </div>
+                        <div class="custom-radio">
+                        <input type="radio" name="subscription" id="yearly">
+                        <label for="yearly">
+                            <div class="radio"></div>
+                            <span>Yearly</span>
+                        </label>
+                    </div>
+                </div>
                     </div>
                         <input class="get-started-btn" type="submit" value="Get started">
                     </form>
@@ -175,6 +187,36 @@
                         </ul>
                 </div>
                 </div>
+            </div>
+        </section>
+        <section class="contact-us">
+            <div class="container">
+                <h2>Contact us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <form>
+                    <div class="form-wrapper contacts-form-wrapper">
+                    <input type="text" name="fname" placeholder="First name" required>
+                    <input type="text" name="lname" placeholder="Last name" required>
+                    <input type="tel" name="telephone" placeholder="Phone number" required>
+                    <div class="radio-buttons">
+                        <div class="custom-radio">
+                            <input type="radio" name="contacts" id="personal" checked>
+                            <label for="personal">
+                                <div class="radio"></div>
+                                <span>Personal</span>
+                            </label>
+                        </div>
+                        <div class="custom-radio">
+                            <input type="radio" name="contacts" id="company">
+                            <label for="company">
+                                <div class="radio"></div>
+                                <span>Company</span>
+                            </label>
+                        </div>
+                    </div>
+                    <input class="contact-send-btn" type="submit" value="Send">
+                </div>
+                </form>
             </div>
         </section>
 

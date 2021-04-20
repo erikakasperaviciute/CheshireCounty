@@ -1,0 +1,60 @@
+.contact-us {
+    background-color: $icon-bg-orange;
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    h2 {
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+    p {
+        margin-bottom: 27px;
+    }
+
+     form {
+         margin: auto;
+         max-width: 360px;
+         box-shadow: 0px 5px 6px rgba($color: #000000, $alpha: 0.16);
+         padding-top: 0;
+        
+         .contacts-form-wrapper {
+             padding: 33px 15px;
+         }
+         .contact-send-btn {
+            // width: 100%;
+            border: none;
+            border-radius: 5px;
+            background-color: $green-neon;
+            padding: 15px 57px;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            margin: 0;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+
+        input[type=text], input[type=tel] {
+            border: none;
+            border-bottom: solid 1px $black-bg;
+            opacity: 0.5;
+            width: 100%;
+            margin-bottom: 30px;
+            outline: none;
+    
+        }
+        
+        ::placeholder {
+            color: $black-bg;
+            opacity: 0.5;
+            padding-left: 5px;
+            padding-bottom: 5px;
+        }
+     }
+
+
+    
+}
