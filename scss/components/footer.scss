@@ -4,16 +4,16 @@ footer {
     .container{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     }
     .social-icons {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        svg {
+
+        a {
             margin-right: 108px;
-            &:last-of-type {
-                margin-right: 361px;
-            }
+
+            &:hover {transform: scale(1.2);}
         }
     }
     .copyright {

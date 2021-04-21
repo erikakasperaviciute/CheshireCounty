@@ -22,7 +22,6 @@
              padding: 33px 15px;
          }
          .contact-send-btn {
-            // width: 100%;
             border: none;
             border-radius: 5px;
             background-color: $green-neon;
@@ -39,8 +38,7 @@
 
         input[type=text], input[type=tel] {
             border: none;
-            border-bottom: solid 1px $black-bg;
-            opacity: 0.5;
+            border-bottom: solid 1px rgba($color: $black-bg, $alpha: 0.5); 
             width: 100%;
             margin-bottom: 30px;
             outline: none;

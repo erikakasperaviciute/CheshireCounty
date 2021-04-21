@@ -13,11 +13,14 @@ header {
     ul {
     display: flex;
     padding-top: 25px;
+    padding-left: 0;
     margin:0;
 
     li {
         list-style: none;
-        margin-left: 45px;
+        &:not(:last-child) {
+            margin-right: 44px;
+        }
         
     }
 

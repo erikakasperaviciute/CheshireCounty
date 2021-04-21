@@ -53,8 +53,6 @@
 }
 
 .plan-card-center {
-    margin-left: 40px;
-    margin-right: 40px;
     .green-line {
         background-color: $green-neon;
         padding: 11px 0;
@@ -62,12 +60,18 @@
             text-transform: uppercase;
         }
     }
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
 }
 
 .plan-card {
     .green-line {
         background-color: $green-neon;
         height: 6px;
+    }
+    &:not(:last-child) {
+        margin-right: 40px;
     }
 }
 .pricing-cards-section{

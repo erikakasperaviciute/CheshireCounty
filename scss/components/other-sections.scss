@@ -12,12 +12,21 @@ main {
 .social-icons {
     display: flex;
     flex-direction: row;
-    
+    align-items: center;
+    a {
+        &:hover {
+            svg g, svg path{
+                opacity: 1;
+            }
+        }
 
-    img {
-        margin-left: 105px;
+        &:not(:last-of-type) {
+            margin-right: 105px;
+        }  
     }
+
 }
+
 .social-media {
     padding: 19px 0;
     .container {
@@ -32,6 +41,7 @@ main {
             p {
                 color: $social-paragraph;
                 line-height: 20px;
+                margin-right: 135px;
             }
 
         }
