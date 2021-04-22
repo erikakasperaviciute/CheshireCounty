@@ -1,6 +1,8 @@
 .hero {
     position: relative;
-    height: 100%;
+    display: flex;
+    height: calc(100vh - 107px - 72px);
+
   
     &:after,
     &-image {
@@ -25,6 +27,7 @@
       position: relative;
       display: flex;
       flex-direction: row;
+      align-items: flex-end;
       padding-top: 65px;
       padding-bottom: 139px;
       color: #fff;
