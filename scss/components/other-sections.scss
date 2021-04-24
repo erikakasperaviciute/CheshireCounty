@@ -13,13 +13,15 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
+    
     a {
         &:hover {
+            transform: scale(1.2);
             svg g, svg path{
                 opacity: 1;
+
             }
         }
-
         &:not(:last-of-type) {
             margin-right: 105px;
         }  

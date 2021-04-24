@@ -31,7 +31,9 @@ for (let tab of tabNavigationBlocks) {
 
 
 const swiper = new Swiper('.reviews-swiper', {
-    slidesPerView: 1,
+
+    // slidesPerView: 3,
+    slidesPerGroup: 3,
     autoHeight: true,
 
     breakpoints: {
@@ -49,8 +51,7 @@ const swiper = new Swiper('.reviews-swiper', {
     //     delay: 5000
     // },
 
-    // Optional parameters
-    // loop: true,
+    loop: true,
   
     // If we need pagination
     pagination: {

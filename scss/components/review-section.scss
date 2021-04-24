@@ -1,0 +1,110 @@
+
+.reviews {
+    text-align: center;
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        border: 1px solid $icon-bg-orange;
+        opacity: 1;
+
+
+    }
+    .swiper-pagination-bullet-active {
+        width: 10px;
+        height: 10px;
+        background: $icon-bg-orange;
+
+    }
+    .container {
+        padding-top: 67px;
+        padding-bottom: 56px;
+        .swiper-wrapper{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        h2 {
+            text-transform: uppercase;
+        }
+        svg {
+            margin-top: 31px;
+            // margin-bottom: 58px;
+        }
+    }
+}
+
+.review {
+    .comment {
+        position: relative;
+        background-color: $blueish;
+        padding: 20px;
+        border-radius: 8px;
+        width: 233px;
+        p {
+            text-align: left;
+            font-size: 16px;
+            line-height: 22px;
+            color: #fff;
+        }
+        .comments-triangle {
+            position: absolute;
+            bottom: -7px;
+            left: 33px;
+            width: 20px;
+            height: 20px;
+            border-radius: 2px;
+            background-color: $blueish;
+            transform: rotate(45deg);
+
+        }
+    }
+}
+
+.person {
+    display: flex;
+    flex-direction: row;
+    padding-top: 19px;
+
+    .persons-photo{
+        img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-right: 17px;
+        }
+    }
+    .persons-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .p-name{
+            h4 {
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 4px;
+            }
+        }
+        .occupation {
+            p {
+                color: $social-paragraph;
+                line-height: 17px;
+                text-align: left;
+            }
+        }
+    }
+}
+.reviews {
+    .swiper-container-horizontal {
+        .swiper-pagination-bullets {
+            .swiper-pagination-bullet{
+                &:not(:last-child) {
+                    margin-right: 16px;
+                }
+            }
+
+        }
+    } 
+}
