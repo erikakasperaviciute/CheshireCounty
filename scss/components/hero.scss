@@ -39,6 +39,9 @@
       @include small-screen {
         flex-direction: column;
       }
+      @include mobile {
+        padding-bottom: 80px;
+      }
     }
     .first-column{
       margin-right: 87px; 

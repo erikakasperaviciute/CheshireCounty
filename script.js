@@ -96,7 +96,7 @@ submitBtn.addEventListener('click', function() {
 let fNameC = document.getElementById('fname-c');
 let lNameC = document.getElementById('lname-c');
 let phoneNumberC = document.getElementById('phone-c');
-let submitButton = document.getElementById('submit-button')
+let submitButton = document.getElementById('submit-button');
 let allGoodC = document.getElementById('fill-c');
 let noFillC = document.getElementById('no-fill-c');
 

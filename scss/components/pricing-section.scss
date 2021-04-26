@@ -3,7 +3,11 @@
     text-align: center;
     .container {
         padding-top: 97px;
-        padding-bottom: 107px; 
+        padding-bottom: 107px;
+        @include mobile {
+            padding-top: 85px;
+            padding-bottom: 75px;
+        }
     }
     h2 {
         color: #fff;
@@ -30,6 +34,9 @@
     @include smaller-tablet {
         flex-direction: column;
         align-items: center;
+    }
+    @include mobile {
+        margin-top: 50px;
     }
 
     h4, .price, .payment {
