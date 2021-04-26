@@ -23,6 +23,10 @@
     grid-template-columns: repeat(auto-fit, 300px);
     justify-content: center;
     margin-top: 65px;
+    @media (max-width: 1150px) {
+        grid-gap: 50px;
+        grid-template-columns: repeat(auto-fit, 280px);
+    }
     .attribute-container {
         h4 {
             font-weight: 400;

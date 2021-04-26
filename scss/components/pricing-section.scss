@@ -3,8 +3,7 @@
     text-align: center;
     .container {
         padding-top: 97px;
-        padding-bottom: 107px;
-        
+        padding-bottom: 107px; 
     }
     h2 {
         color: #fff;
@@ -24,7 +23,15 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    margin-top: 83px;
+    margin-top: 83px; 
+    @media (max-width: 1150px) {
+        justify-content: space-between;
+    }
+    @include smaller-tablet {
+        flex-direction: column;
+        align-items: center;
+    }
+
     h4, .price, .payment {
         background-color: #333333;
     }
@@ -34,13 +41,30 @@
         width: 343px;
         padding: 14px 0;
         border-radius: 5px 5px 0 0;
+        @media (max-width: 1150px) {
+            width: 310px;
+        }
+        @include smaller-tablet {
+            width: 343px;
+        }
+        @include mobile {
+            width: 300px;
+        }
     }
     .price {
         font-size: 94px;
         padding-top: 37px;
         padding-bottom: 37px;
+        @include mobile {
+            font-size: 46px;
+            padding-top: 27px;
+            padding-bottom: 27px;
+        }
         span {
             font-size: 36px;
+            @include mobile {
+                font-size: 26px;
+            }
         }
     }
     .payment {
@@ -63,6 +87,16 @@
     &:not(:last-child) {
         margin-right: 40px;
     }
+    @media (max-width: 1150px) {
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+    }
+    @include smaller-tablet {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    
 }
 
 .plan-card {
@@ -73,19 +107,32 @@
     &:not(:last-child) {
         margin-right: 40px;
     }
+    @media (max-width: 1150px) {
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+    }
+    @include smaller-tablet {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    
 }
 .pricing-cards-section{
-ul {
-    list-style-type: none;
-    text-align: center;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    border-radius: 0px 0px 5px 5px;
-    li {
-        color: $social-paragraph;
-        text-transform: uppercase;
-        line-height: 40px;
+    ul {
+        list-style-type: none;
+        text-align: center;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        border-radius: 0px 0px 5px 5px;
+        li {
+            color: $social-paragraph;
+            text-transform: uppercase;
+            line-height: 40px;
+            @include mobile {
+                line-height: 35px;
+            }
+        }
     }
-}
 }

@@ -7,14 +7,11 @@
         background: #fff;
         border: 1px solid $icon-bg-orange;
         opacity: 1;
-
-
     }
     .swiper-pagination-bullet-active {
         width: 10px;
         height: 10px;
         background: $icon-bg-orange;
-
     }
     .container {
         padding-top: 67px;
@@ -31,7 +28,6 @@
         }
         svg {
             margin-top: 31px;
-            // margin-bottom: 58px;
         }
     }
 }
@@ -102,6 +98,11 @@
             .swiper-pagination-bullet{
                 &:not(:last-child) {
                     margin-right: 16px;
+                }
+                @include mobile {
+                    &:not(:last-child) {
+                        margin-right: 6px;
+                    }
                 }
             }
 
